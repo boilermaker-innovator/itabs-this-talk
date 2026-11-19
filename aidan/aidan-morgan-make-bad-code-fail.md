@@ -4,7 +4,17 @@
 
 *Talk notes, packaged by iTabs · talk.itabs.co/aidan*
 
+> **Who it's for:** anyone using an AI agent (Claude Code, Copilot, Cursor and so on) to write code, including vibe coders.
+
 > Notes compiled by Jon Gwynne from photos of the slides, so a few details may be slightly off.
+
+---
+
+## Your homework
+
+**Add one gate: your most-failed check, in a Stop hook and in CI.**
+
+You're done when your agent gets blocked by your gate at least once.
 
 ---
 
@@ -38,6 +48,8 @@ When an AI agent writes code, don't rely on asking it nicely or reviewing everyt
 - **A required CI check:** code can't be merged until it passes.
 - **Rules the agent can't edit:** so it can't "fix" a failure by loosening the rule.
 
+> **What "exit 2" means:** in Claude Code, a Stop hook is a small script that runs when the agent thinks it's finished. If the script exits with code 2, the agent isn't allowed to stop. It gets the error message back and has to fix the problem first.
+
 **How the gates tighten:** a ratchet.
 
 - Record today's numbers as the baseline.
@@ -49,10 +61,6 @@ When an AI agent writes code, don't rely on asking it nicely or reviewing everyt
 A **big-bang gate** finds 1,284 problems on day one, and by day two someone switches it off.
 
 A **baseline gate** records today's numbers, fails only on new or worse code, and tightens one step a month.
-
-## This sprint
-
-**Add one gate: your most-failed check, in a Stop hook and in CI.**
 
 ---
 
@@ -95,6 +103,15 @@ Help me apply this to my own project, one gate at a time:
 
 Keep explanations short and plain. Ask before assuming anything about my setup.
 ```
+
+---
+
+## Check yourself
+
+- [ ] I picked my most-failed check
+- [ ] It runs as a Stop hook and as a required CI check
+- [ ] The agent can't edit the gate's rules
+- [ ] I made it fail on purpose once and saw it block
 
 ---
 
