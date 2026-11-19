@@ -27,4 +27,4 @@ This repo is the whole site. Plain files, no build step.
 9. Open `https://talk.itabs.co/aidan` on your phone, and scan the QR code to test it.
 
 ## Adding the next talk
-Copy the `aidan` folder to a new name (e.g. `sarah`), swap the MD, title and QR, push. It goes live at `talk.itabs.co/sarah`.
+Speakers make their folder with the iTabs This Talk skill (`skill/SKILL.md`). Drop their folder (e.g. `sarah/`) in the repo root, add it to `README.md` and `index.html`, and push. It goes live at `talk.itabs.co/sarah`.
