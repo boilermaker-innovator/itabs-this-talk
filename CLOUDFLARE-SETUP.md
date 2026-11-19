@@ -1,5 +1,7 @@
 # Put talk.itabs.co on Cloudflare
 
+> **Not set up yet.** For now, talk pages are served by the iTabs This Video Worker at `itabs-this-video.jgwynne7.workers.dev/talk/<name>`. Follow these steps when we switch to talk.itabs.co, then do the switch-over list in `README.md`.
+
 This repo is the whole site. Plain files, no build step.
 
 ## A. Create the site (Cloudflare Pages)
